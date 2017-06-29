@@ -13,6 +13,12 @@ h1{color:#e0e0e0;
    text-align:center;
    font-size: 40px;
 }
+.principe{
+	background-image:url('jpg/parallax.jpg');
+	background-position:top center;
+	background-repeat:repeat-y;
+	background-attachment:fixed;
+}
 .cate{
 	float:left;
 	width:48%;
@@ -61,8 +67,12 @@ h1{color:#e0e0e0;
   top:-100px;
   opacity: 0.5;
 }
-@media (max-width: 650px){
-	.cate{float:none;width:100%;text-align:center;}
+@media (max-width: 650px) and (min-width:0px){
+	.cate{
+		float:none;
+		width:100%;
+		text-align:center;
+	}
 }
 /* animazioni entrata */
 @-webkit-keyframes dasinistra{
@@ -175,7 +185,7 @@ h1{color:#e0e0e0;
 </head>
 
 <body>
-<div style="background:url(jpg/parallax.jpg) center center no-repeat fixed;">
+<div class="principe">
 <p>&nbsp;</p>
 <h1>Scegli tra le nostre categorie di prodotto</h1>
 	<div class="container">
