@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LaFenice</title>
+<style>
+body{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+h1{color:#e0e0e0;
+   text-align:center;
+   font-size: 40px;
+}
+.cate{
+	float:left;
+	width:48%;
+	overflow: hidden;
+	margin-left:1%;
+	background-color:#000;
+}
+
+.cate a {
+	text-decoration:none;
+	background:none;
+}
+
+.cate a img, .cate a span{
+  opacity:1;
+  scale:1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.cate a:hover img{
+  opacity:0.6;
+  scale:1.2;
+}
+
+.cate a span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top:-80px;
+  top:0px;
+  z-index: 2;
+  font-family: sans-serif;
+  font-size:37px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height:50px;
+  background:none;
+}
+.cate a:hover span{
+  top:-100px;
+  opacity: 0.5;
+}
+@media (max-width: 650px){
+	.cate{float:none;width:100%;text-align:center;}
+}
+/* animazioni entrata */
+@-webkit-keyframes dasinistra{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes dasinistra {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft1 {
+  -webkit-animation: dasinistra 2s ease-out;
+  animation: dasinistra 1s ease-out;
+}
+.fadeInLeft2 {
+  -webkit-animation: dasinistra 2s ease-out 400ms;
+  animation: dasinistra 1s ease-out 400ms;
+}
+.fadeInLeft3 {
+  -webkit-animation: dasinistra 2s ease-out 800ms;
+  animation: dasinistra 1s ease-out 800ms;
+}
+.fadeInLeft4 {
+  -webkit-animation: dasinistra 2s ease-out 1200ms;
+  animation: dasinistra 1s ease-out 1200ms;
+}
+.fadeInLeft5 {
+  -webkit-animation: dasinistra 2s ease-out 1600ms;
+  animation: dasinistra 1s ease-out 1600ms;
+}
+.fadeInLeft6 {
+  -webkit-animation: dasinistra 2s ease-out 2000ms;
+  animation: dasinistra 1s ease-out 2000ms;
+}
+
+@-webkit-keyframes dadestra {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes dadestra {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight1 {
+  -webkit-animation: dadestra 2s ease-out;
+  animation: dadestra 1s ease-out;
+}
+.fadeInRight2 {
+  -webkit-animation: dadestra 2s ease-out 400ms;
+  animation: dadestra 1s ease-out 400ms;
+}
+.fadeInRight3 {
+  -webkit-animation: dadestra 2s ease-out 800ms;
+  animation: dadestra 1s ease-out 800ms;
+}
+.fadeInRight4 {
+  -webkit-animation: dadestra 2s ease-out 1200ms;
+  animation: dadestra 1s ease-out 1200ms;
+}
+.fadeInRight5 {
+  -webkit-animation: dadestra 2s ease-out 1600ms;
+  animation: dadestra 1s ease-out 1600ms;
+}
+.fadeInRight6 {
+  -webkit-animation: dadestra 2s ease-out 2000ms;
+  animation: dadestra 1s ease-out 2000ms;
+}
+
+</style>
+</head>
+
+<body>
+<div style="background:url(img/parallax.jpg) center center no-repeat fixed;">
+<p>&nbsp;</p>
+<h1>Scegli tra le nostre categorie di prodotto</h1>
+	<div class="container">
+        <div class="cate fadeInLeft1">
+         <a href="pdf/classica.pdf" target="_blank"><img src="jpg/p_legno.jpg" /><span>Pavimento<br />Effetto Legno</span></a>
+        </div>
+		<div class="cate fadeInRight1" >
+         <a href="#"><img src="jpg/r_legno.jpg" /><span>Rivestimento<br />Effetto Legno</span></a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="cate fadeInLeft2">
+         <a href="#"><img src="jpg/p_marmo.jpg" /><span>Pavimento<br />Effetto Marmo</span></a>
+        </div>
+		<div class="cate fadeInRight2">
+         <a href="#"><img src="jpg/r_marmo.jpg" /><span>Rivestimento<br />Effetto Marmo</span></a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="cate fadeInLeft3">
+         <a href="#"><img src="jpg/p_pietre.jpg" /><span>Pavimento<br />Effetto Pietra</span></a>
+        </div>
+		<div class="cate fadeInRight3">
+         <a href="#"><img src="jpg/r_pietre.jpg" /><span>Rivestimento<br />Effetto Pietra</span></a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="cate fadeInLeft4">
+         <a href="#"><img src="jpg/p_cemento.jpg" /><span>Pavimento<br />Effetto Cemento</span></a>
+        </div>
+		<div class="cate fadeInRight4" >
+         <a href="#"><img src="jpg/r_cemento.jpg" /><span>Rivestimento<br />Effetto Cemento</span></a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="cate fadeInLeft5">
+         <a href="#"><img src="jpg/p_texture.jpg" /><span>Pavimento<br />Effetto Texture</span></a>
+        </div>
+		<div class="cate fadeInRight5">
+         <a href="#"><img src="jpg/r_texture.jpg" /><span>Rivestimento<br />Effetto Texture</span></a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="cate fadeInLeft6">
+         <a href="#"><img src="jpg/p_cotto.jpg" /><span>Pavimento<br />Effetto Cotto</span></a>
+        </div>
+		<div class="cate fadeInRight6">
+         <a href="#"><img src="jpg/r_cotto.jpg" /><span>Rivestimento<br />Effetto Cotto</span></a>
+        </div>
+        <div style="clear:both;"></div>
+	</div>
+ <p>&nbsp;</p>
+</div>
+</body>
+</html>
