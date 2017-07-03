@@ -10,7 +10,7 @@ h1{color:#e0e0e0;
    font-size: 40px;
 }
 .principe{
-	background-image:url('jpg/parallax.jpg');
+	background-image:url('../jpg/parallax.jpg');
 	background-position:top center;
 	background-repeat:repeat-y;
 	background-attachment:fixed;
@@ -49,20 +49,16 @@ h1{color:#e0e0e0;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top:-80px;
   top:0px;
   z-index: 2;
   font-family: sans-serif;
-  font-size:37px;
+  font-size:50%;
   font-weight: bold;
   color: #ffffff;
-  line-height:50px;
+  line-height:50%;
   background:none;
 }
-.cate a:hover span{
-  top:-100px;
-  opacity: 0.5;
-}
+
 @media (max-width: 650px) and (min-width:0px){
 	.cate{
 		float:none;
@@ -70,6 +66,29 @@ h1{color:#e0e0e0;
 		text-align:center;
 	}
 }
+
+/*animazione di cate */
+@keyframes dasotto {
+  from {
+	
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d( 0,-100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.cate {
+  -webkit-animation: dasotto 1s ease-out 2500ms;
+  animation: dasotto 1s ease-out 2500ms;
+}
+
+
+
 /* animazioni entrata */
 @-webkit-keyframes dasinistra{
   from {
@@ -100,27 +119,27 @@ h1{color:#e0e0e0;
 }
 
 .fadeInLeft1 {
-  -webkit-animation: dasinistra 2s ease-out;
+  -webkit-animation: dasinistra 1s ease-out;
   animation: dasinistra 1s ease-out;
 }
 .fadeInLeft2 {
-  -webkit-animation: dasinistra 2s ease-out 400ms;
+  -webkit-animation: dasinistra 1s ease-out 400ms;
   animation: dasinistra 1s ease-out 400ms;
 }
 .fadeInLeft3 {
-  -webkit-animation: dasinistra 2s ease-out 800ms;
+  -webkit-animation: dasinistra 1s ease-out 800ms;
   animation: dasinistra 1s ease-out 800ms;
 }
 .fadeInLeft4 {
-  -webkit-animation: dasinistra 2s ease-out 1200ms;
+  -webkit-animation: dasinistra 1s ease-out 1200ms;
   animation: dasinistra 1s ease-out 1200ms;
 }
 .fadeInLeft5 {
-  -webkit-animation: dasinistra 2s ease-out 1600ms;
+  -webkit-animation: dasinistra 1s ease-out 1600ms;
   animation: dasinistra 1s ease-out 1600ms;
 }
 .fadeInLeft6 {
-  -webkit-animation: dasinistra 2s ease-out 2000ms;
+  -webkit-animation: dasinistra 1s ease-out 2000ms;
   animation: dasinistra 1s ease-out 2000ms;
 }
 
@@ -153,27 +172,26 @@ h1{color:#e0e0e0;
 }
 
 .fadeInRight1 {
-  -webkit-animation: dadestra 2s ease-out;
+  -webkit-animation: dadestra 1s ease-out;
   animation: dadestra 1s ease-out;
 }
 .fadeInRight2 {
-  -webkit-animation: dadestra 2s ease-out 400ms;
+  -webkit-animation: dadestra 1s ease-out 400ms;
   animation: dadestra 1s ease-out 400ms;
 }
 .fadeInRight3 {
-  -webkit-animation: dadestra 2s ease-out 800ms;
+  -webkit-animation: dadestra 1s ease-out 800ms;
   animation: dadestra 1s ease-out 800ms;
 }
 .fadeInRight4 {
-  -webkit-animation: dadestra 2s ease-out 1200ms;
+  -webkit-animation: dadestra 1s ease-out 1200ms;
   animation: dadestra 1s ease-out 1200ms;
 }
 .fadeInRight5 {
-  -webkit-animation: dadestra 2s ease-out 1600ms;
+  -webkit-animation: dadestra 1s ease-out 1600ms;
   animation: dadestra 1s ease-out 1600ms;
 }
 .fadeInRight6 {
-  -webkit-animation: dadestra 2s ease-out 2000ms;
+  -webkit-animation: dadestra 1s ease-out 2000ms;
   animation: dadestra 1s ease-out 2000ms;
 }
-
