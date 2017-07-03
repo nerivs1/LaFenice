@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets" >
+  <name>La Fenice App</name>
+  <description>
+      Naviga tra i nostri prodotti e i nostri cataloghi.
+  </description>
+
+  <author href="https://www.videostudio1.com" email="info@videostudio1.com">
+      Riccardo Neri - Videostudio1
+  </author>
+
+</widget>
