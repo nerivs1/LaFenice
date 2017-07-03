@@ -8,5 +8,6 @@
   <author href="https://www.videostudio1.com" email="info@videostudio1.com">
       Riccardo Neri - Videostudio1
   </author>
-
+  <content src="index.html" />
+  <icon src="www/jpg/logobianco.png" />
 </widget>
