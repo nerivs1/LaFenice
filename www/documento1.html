@@ -7,20 +7,6 @@
 <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 <title>LaFenice - Documento1</title>
 <link rel="stylesheet" href="css/principale.css" type="text/css"/>
-<script src='js/index.js'></script>
-<script>
-// pure JS
-var elem = document.getElementById('mySwipe');
-window.mySwipe = Swipe(elem, {
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
-});
-</script>
 </head>
 
 <body>
@@ -41,9 +27,22 @@ window.mySwipe = Swipe(elem, {
   </div>
 </div>
 <p>&nbsp;</p>
-<p><button onclick='mySwipe.prev()'> < </button> | <button onclick='mySwipe.next()'> > </button></p>
 	</div>
  <p>&nbsp;</p>
 </div>
+	<script src='js/index.js'></script>
+<script>
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+</script>
 </body>
 </html>
