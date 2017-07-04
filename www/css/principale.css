@@ -9,11 +9,28 @@ h1{color:#e0e0e0;
    text-align:center;
    font-size: 40px;
 }
+h2{color:#e0e0e0;
+   text-align:center;
+   font-size:30px;
+}
+a.tasti{
+	text-decoration:none;
+	padding:5%;
+	border: 1px solid;
+	border-color:rgba(224,224,224,1);
+	color:#e0e0e0;
+}
+a.tasti:hover{
+	color:#fff;
+	border-color:rgba(224,224,224,0.5);
+}
 .principe{
-	background-image:url('../jpg/parallax.jpg');
+	background-image:url('../jpg/parallax2.jpg');
 	background-position:top center;
 	background-repeat:repeat-y;
 	background-attachment:fixed;
+	padding:0px;
+	margin:0px;
 }
 .cate{
 	float:left;
@@ -21,6 +38,7 @@ h1{color:#e0e0e0;
 	overflow: hidden;
 	margin-left:1%;
 	background-color:#000;
+	margin-bottom:2%;
 }
 
 .cate a {
@@ -37,27 +55,32 @@ h1{color:#e0e0e0;
   transition: all 1s ease;
 }
 
-.cate a:hover img{
-  opacity:0.6;
-  scale:1.2;
-}
-
 .cate a span {
   display: block;
-  opacity: 0;
+  opacity: 0.4;
   position: relative;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  top:0px;
+  margin-top:-4em;
   z-index: 2;
   font-family: sans-serif;
-  font-size:50%;
+  font-size:200%;
   font-weight: bold;
   color: #ffffff;
-  line-height:50%;
-  background:none;
+  line-height:100%;
+  background:rgba(0,0,0,0.6);
 }
+
+.linea{
+	float:left;
+	width:24%;
+	overflow: hidden;
+	margin-left:1%;
+	background-color:#000;
+	margin-bottom:2%;
+}
+
 
 @media (max-width: 650px) and (min-width:0px){
 	.cate{
@@ -65,29 +88,10 @@ h1{color:#e0e0e0;
 		width:100%;
 		text-align:center;
 	}
+	.linea{
+		width:48%;	
 }
-
-/*animazione di cate */
-@keyframes dasotto {
-  from {
-	
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d( 0,-100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
 }
-.cate {
-  -webkit-animation: dasotto 1s ease-out 2500ms;
-  animation: dasotto 1s ease-out 2500ms;
-}
-
-
 
 /* animazioni entrata */
 @-webkit-keyframes dasinistra{
@@ -195,3 +199,4 @@ h1{color:#e0e0e0;
   -webkit-animation: dadestra 1s ease-out 2000ms;
   animation: dadestra 1s ease-out 2000ms;
 }
+
