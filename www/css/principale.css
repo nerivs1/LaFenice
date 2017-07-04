@@ -83,7 +83,7 @@ a.tasti:hover{
 }
 
 
-@media (max-width: 650px) and (min-width:0px){
+@media (max-width: 800px) and (min-width:0px){
 	.cate{
 		float:none;
 		width:100%;
