@@ -22,5 +22,4 @@
   
   <icon src="www/jpg/iconab.png" />
   
-  <gap:plugin name="cordova-plugin-document-viewer" />
 </widget>
