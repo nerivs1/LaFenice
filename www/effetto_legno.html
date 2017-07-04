@@ -8,11 +8,6 @@
 <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 <title>LaFenice - Pavimento effetto legno</title>
 <link rel="stylesheet" href="css/principale.css" type="text/css"/>
-<script>
-function pdffalo(indiri){
-	window.open(indiri, "_system", "location=no");
-}
-</script>
 </head>
 
 <body>
@@ -25,7 +20,7 @@ function pdffalo(indiri){
 <h2> <a href="index.html" class="tasti">&nbsp; &nbsp;< Torna a tutte le categorie</a></h2>
 	<div class="container">
         <div class="linea">
-         <a href="#" onclick="pdffalo('pdf/classica.pdf');"><img src="jpg/l_colosseum.jpg" style="width:100%;"/></a>
+         <a href="#" onclick='window.open("pdf/classica.pdf", "_system", "location=no");'><img src="jpg/l_colosseum.jpg" style="width:100%;"/></a>
         </div>
 		<div class="linea" >
          <a href="#"><img src="jpg/l_crystal.jpg" style="width:100%;"/></a>
