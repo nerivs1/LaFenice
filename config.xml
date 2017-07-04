@@ -21,4 +21,6 @@
   <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
   
   <icon src="www/jpg/iconab.png" />
+  
+  <gap:plugin name="cordova-plugin-document-viewer" />
 </widget>
